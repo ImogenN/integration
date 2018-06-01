@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Arapey|Josefin+Sans|Lato|Montserrat|Playfair+Display" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  font-family: helvetica, sans-serif;
+  background: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #454545;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+ul li {
+  color: #aaaaaa;
+  font-family: 'Lato';
+  font-size: 20px;
+  padding-top: 5px;
+}
+ul li a {
+  color: #aaaaaa;
+  transition: color .5s;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+}
+a:hover {
+  text-decoration: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+h1 {
+  font-family: 'Playfair Display', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin-top: 0px;
+  padding-top: 50px;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+}
+h2 {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+}
+.pagehead {
+  margin: 0;
+  height: 340px;
+  width: 100%;
+  background-image: url("pagehead.jpeg");
+  background-position: top;
+}
+p {
+  font-family: 'Josefin Sans';
+  padding: 30px 50px 30px 50px;
+  line-height: 30px;
+}
+h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 30px;
+  padding: 60px 60px 15px 60px;
+}
+#firstp {
+    padding: 50px 50px 25px 50px;
+    line-height: 20px;
+}
+#bacp {
+  margin: 40px;
+  height: 200px;
+}
+#secondrow, #thirdrow, #sixthrow, #seventhrow, #tenthrow, #eleventhrow {
+  background-color: #ebebe0;
+}
+#diagram {
+  padding: 10px 60px 20px 60px;
+  height: 400px;
+  align-content: center;
+}
+#quote {
+  font-size: 18px;
+  font-family: 'Arapey';
+  font-style: italic;
+  color:#528aa8;
+}
+.map {
+  margin: 30px 50px 50px 50px;
+}
+.address {
+  padding: 80px 20px 50px 50px;
+}
+.container {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  h1 {
+   font-size: 50px;
+   margin: 20px 0 0 0;
+   line-height: 40px;
+  }
+  h2 {
+   font-size: 20px;
+   margin: 20px 0 30px 0;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+  <div class="pagehead">
+    <h1>Integration Counselling</h1>
+    <h2>holistic counselling service</h2>
+  </div>
+  <div class="nav" id="stickynav">
+    <nav>
+      <ul>
+        <li><a href="#secondrow">What is Integrative Counselling?</a></li>
+        <li><a href="#fourthrow">Therapists</a></li>
+        <li><a href="#sixthrow">Fees</a></li>
+        <li><a href="#eighthrow">Locations</a></li>
+        <li><a href="#tenthrow">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container" id="content">
+  <div class="row" id="firstrow">
+    <div class="col-md-7">
+      <p id="firstp">"Therapists practise in all walks of life and all parts of society, from NHS clinics to workplaces and education.
+        They are trained to deal with a range of situations, helping people to cope with such issues as anxiety and bereavement,
+        relationship difficulties, sexual and racial issues, child abuse and trauma, or personal problem solving.
+        We use the word 'therapy' to cover talking therapies, such as counselling, psychotherapy and coaching. Therapy offers a safe,
+        confidential place to talk to a trained professional about your feelings and concerns. You might talk about difficult events
+        in your life or your relationships and emotions. Or you might have negative thoughts and behaviours that you want to change.
+        Therapists will not give you advice or solve your problems for you. They will listen to your story, helping you to understand
+        yourself better and make positive changes in your life."<br /><br />- British Association of Counselling and Psychotherapy</p>
+    </div>
+    <div class="col-md-5">
+      <img id="bacp" src="bacp.jpg"/>
+    </div>
+  </div>
+  <div class="row" id="secondrow">
+    <h3>What is Integrative Counselling?</h3>
+  </div>
+  <div class="row" id="thirdrow">
+    <div class="col-md-4">
+      <img id="diagram" src="diagram.png"/>
+    </div>
+    <div class="col-md-8">
+      <p> Integrative therapy, or integrative counselling is a combined approach to psychotherapy that brings
+        together different elements of specific therapies. Integrative therapists take the view that there is
+        no single approach that can treat each client in all situations. Each person needs to be considered as
+        a whole and counselling techniques must be tailored to their individual needs and personal circumstances.
+        Integrative counselling maintains the idea that there are many ways in which human psychology can be
+        explored and understood - no one theory holds the answer. All theories are considered to have value,
+        even if their foundational principles contradict each other - hence the need to integrate them.The
+        integrative approach also refers to the infusion of a person's personality and needs - integrating the
+        affective, behavioural, cognitive, and physiological systems within one person, as well as addressing
+        social and spiritual aspects. Essentially, integrative counsellors are not only concerned with what works,
+        but why it works - tailoring therapy to their clients and not the client to the therapy.</p>
+    </div>
+  </div>
+  <div class="row" id="fourthrow">
+    <h3>Therapists</h3>
+  </div>
+  <div class="row" id="fifthrow">
+    <div class="col-md-4">
+        <p id="quote">"I can help you address personal difficulties and overcome emotional obstacles, in a confidential and non-jugdemental environment.
+          I help clients work through a range of issues, including, but not limited to, anxiety, depression and low self-esteem. If you're looking to make changes to your life, get in touch for a professional and welcoming
+          therapy experience."</p>
+    </div>
+    <div class="col-md-2">
+      <img id="headshot" src=""/>
+    </div>
+    <div class="col-md-6">
+      <p>Integration counselling was set up by Imogen Nevard. She is an integratively trained therapist and member
+        of the British Association of Counselling and Psychotherapy, with experience counselling in both NHS and charity settings
+        .<br /><br />Qualifications:<br />- MA (hons)
+        Counselling from the University of Manchester<br />- Level 4 Qualification in Community Mental Health Practice
+        <br />- Currently completing a PhD in mental health research at the University of Manchester </p>
+
+    </div>
+
+  </div>
+  <div class="row" id="sixthrow">
+    <h3>Fees</h3>
+  </div>
+  <div class="row" id="seventhrow">
+    <div class="col-md-4">
+      <img id="pricetable" src=""/>
+    </div>
+    <div class="col-md-8">
+      <p>words</p>
+    </div>
+  </div>
+  <div class="row" id="eighthrow">
+    <h3>Locations</h3>
+  </div>
+  <div class="row" id="ninthrow">
+    <div class="col-md-3">
+      <iframe class="map" style="height: 300px; width: 300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1128.0966938531012!2d-2.3239490932053153!3d53.4255534299957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bac4f1ae71ec5%3A0x87934246d9620c1d!2sCurzon+Rd%2C+Sale+M33+7DR!5e0!3m2!1sen!2suk!4v1524518713390" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-3">
+      <p class="address">Health & Wellbeing Centre<br />2A Curzon Road<br />Sale<br />Manchester<br />M33 7DR<br /><small>*next to Re:Love & Care Charity Shop</small></p>
+    </div>
+    <div class="col-md-3">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.277981047532!2d-2.248327684429251!3d53.481362780007615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1c3b3fb885f%3A0x9aff93f8f1ae6a4b!2sNeal&#39;s+Yard+Remedies!5e0!3m2!1sen!2suk!4v1527882845243" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+    </div>
+    <div class="col-md-3">
+        <p class="address">Other address</p>
+    </div>
+  </div>
+  <div class="row" id="tenthrow">
+    <h3>Contact</h3>
+  </div>
+  <div class="row" id="eleventhrow">
+    <div class="col-md-4">
+      <img id="contactpic" src=""/>
+    </div>
+    <div class="col-md-8">
+      <p>words</p>
+    </div>
+  </div>
+</div>
+  <script>
+  $(document).ready(function(){
+  $('body').css('display', 'none');
+  $('body').fadeIn(1000);
+  });
+  $(function(){
+      var x = 0;
+      setInterval(function(){
+          x-=1;
+          $('.pagehead').css('background-position', x + 'px 0');
+      }, 50);
+  })
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("stickynav");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+  $('h1').mouseover('hover', function() {
+    $('h1, h2').css("color", "#545454")
+  })
+  $('h1').mouseout('hover', function() {
+    $('h1, h2').css("color", "#aaaaaa")
+  })
+  $('li a').mouseover('hover', function() {
+    $(this).css("color", "#232323")
+  })
+  $('a').mouseout('hover', function() {
+    $(this).css("color", "#aaaaaa")
+  })
+  $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+  </script>
+
+</body>
