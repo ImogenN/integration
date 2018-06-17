@@ -93,7 +93,7 @@ h3 {
   margin: 40px;
   height: 200px;
 }
-#secondrow, #thirdrow, #sixthrow, #seventhrow, #tenthrow, #eleventhrow {
+#therapists, #therapiststwo, #therapiststhree #therapistsfour, #group, #grouptwo, #locations, #locationstwo {
   background-color: #ebebe0;
 }
 #diagram {
@@ -121,11 +121,16 @@ h3 {
 .container {
   width: 100%;
 }
-.footlogo {
+.profprof {
   height: 80px;
   margin: 40px 5px 40px 5px;
 }
+footer {
+  background-color: #1a1c1e
+}
 .foottext {
+
+  color: #848f9b;
   font-size: 12px;
   text-align: right;
   margin: 15px 25px 15px 50px;
@@ -156,16 +161,17 @@ h3 {
   <div class="nav" id="stickynav">
     <nav>
       <ul>
-        <li><a href="#secondrow">What is Integrative Counselling?</a></li>
-        <li><a href="#fourthrow">Therapists</a></li>
-        <li><a href="#sixthrow">Fees</a></li>
-        <li><a href="#eighthrow">Locations</a></li>
-        <li><a href="#tenthrow">Contact</a></li>
+        <li><a href="#therapists">Therapists</a></li>
+        <li><a href="#whatis">What is Integrative Counselling?</a></li>
+        <li><a href="#group">Group Facilitation</a></li>
+        <li><a href="#fees">Fees</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
   <div class="container" id="content">
-  <div class="row" id="firstrow">
+  <div class="row" id="intro">
     <div class="col-md-7">
       <p id="firstp">"Therapists practise in all walks of life and all parts of society, from NHS clinics to workplaces and education.
         They are trained to deal with a range of situations, helping people to cope with such issues as anxiety and bereavement,
@@ -179,10 +185,53 @@ h3 {
       <img id="bacp" src="bacp.jpg"/>
     </div>
   </div>
-  <div class="row" id="secondrow">
+  <div class="row" id="therapists">
+    <h3>Therapists</h3>
+  </div>
+  <div class="row" id="therapiststwo">
+    <div class="col-md-6">
+      <p>Integration counselling was set up by Imogen Nevard. She is an integratively trained therapist and member
+        of the British Association of Counselling and Psychotherapy, with experience counselling in both NHS and charity settings</p>
+    </div>
+    <div class="col-md-2">
+      <img id="headshot" src="headshot1.jpg"/>
+    </div>
+  </div>
+  <div class="row" id="therapiststhree">
+    <div class="col-md-8">
+      <p>Qualifications:<br />- MA (hons)
+      Counselling from the University of Manchester<br />- Level 4 Qualification in Community Mental Health Practice
+      <br />- Currently completing a PhD in mental health research at the University of Manchester </p></p>
+    </div>
+    <div class"col-md-4">
+      <img class="qual" src="uom.jpg">
+      <img class="qual" src="bacp.jpg">
+    </div>
+  </div>
+  <div class="row" id="therapistsfour">
+    <h6>Issues worked with<h6>
+    <table>
+      <tr>
+        <td>Anxiety</td>
+        <td>Depression</td>
+        <td>Self-Esteem</td>
+      </tr>
+      <tr>
+        <td>Obsessive Thoughts</td>
+        <td>Relationships</td>
+        <td>Sexual Issues</td>
+      </tr>
+      <tr>
+        <td>Gender and Sexual Diversity</td>
+        <td>Low Mood</td>
+        <td>Phobias</td>
+      </tr>
+    </table>
+  </div>
+  <div class="row" id="whatis">
     <h3>What is Integrative Counselling?</h3>
   </div>
-  <div class="row" id="thirdrow">
+  <div class="row" id="whatistwo">
     <div class="col-md-4">
       <img id="diagram" src="diagram.png"/>
     </div>
@@ -200,41 +249,57 @@ h3 {
         but why it works - tailoring therapy to their clients and not the client to the therapy.</p>
     </div>
   </div>
-  <div class="row" id="fourthrow">
-    <h3>Therapists</h3>
+  <div class="row" id="group">
+        <h3>Group Faciliation Services</h3>
   </div>
-  <div class="row" id="fifthrow">
-    <div class="col-md-6">
-      <p>Integration counselling was set up by Imogen Nevard. She is an integratively trained therapist and member
-        of the British Association of Counselling and Psychotherapy, with experience counselling in both NHS and charity settings
-        .<br /><br />Qualifications:<br />- MA (hons)
-        Counselling from the University of Manchester<br />- Level 4 Qualification in Community Mental Health Practice
-        <br />- Currently completing a PhD in mental health research at the University of Manchester </p>
-    </div>
-    <div class="col-md-2">
-      <img id="headshot" src="headshot1.jpg"/>
-    </div>
+  <div class="row" id="grouptwo">
     <div class="col-md-4">
-      <p id="quote">"I can help you address personal difficulties and overcome emotional obstacles, in a confidential and non-jugdemental environment.
-      I help clients work through a range of issues, including, anxiety, depression and low self-esteem. If you're looking to make changes to your life, get in touch for a professional and welcoming
-      therapy experience."</p>
+      <img src="group.jpg">
+    </div>
+    <div class="col-md-8">
+      <p>Group facilitation involves...</p>
+      <p>Types of group facilitation:</p>
+      <ul>
+        <li>Workplace</li>
+        <li>Group Therapy</li>
+        <li>Personal Development</li>
+      </ul>
     </div>
   </div>
-  <div class="row" id="sixthrow">
+  <div class="row" id="fees">
     <h3>Fees</h3>
   </div>
-  <div class="row" id="seventhrow">
+  <div class="row" id="feestwo">
     <div class="col-md-4">
-      <img id="pricetable" src=""/>
+      <table>
+        <tr>
+          <td>Initial telephone assessment</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Initial telephone assessment</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Initial telephone assessment</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Initial telephone assessment</td>
+          <td>Free</td>
+        </tr>
+        <tr>*Due to overhead costs, you will be charged for cancellations of less than 24 hours notice</tr>
+      </table>
+      <p> Payment is accepted in cash and via Paypal and BACS payment. Workplaces and organisations may pay via invoice.</p>
     </div>
     <div class="col-md-8">
       <p>words</p>
     </div>
   </div>
-  <div class="row" id="eighthrow">
+  <div class="row" id="locations">
     <h3>Locations</h3>
   </div>
-  <div class="row" id="ninthrow">
+  <div class="row" id="locationstwo">
     <div class="col-md-3">
       <iframe class="map" style="height: 300px; width: 300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1128.0966938531012!2d-2.3239490932053153!3d53.4255534299957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bac4f1ae71ec5%3A0x87934246d9620c1d!2sCurzon+Rd%2C+Sale+M33+7DR!5e0!3m2!1sen!2suk!4v1524518713390" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
@@ -242,31 +307,36 @@ h3 {
       <p class="address">Health & Wellbeing Centre<br />2A Curzon Road<br />Sale<br />Manchester<br />M33 7DR<br /><small>*next to Re:Love & Care Charity Shop</small></p>
     </div>
     <div class="col-md-6">
-      <p> *Workplace counselling can be provided onsite for employers based in the Greater Manchester region</p>
+      <ul>
+        <li>Evening and weekend sessions available</li>
+        <li>Workplace counselling can be provided onsite for employers based in the Greater Manchester region</li>
+        <li>Group facilitation can be done at your organisation. If a venue is also required, this will incur an additional charge</li>
+        <li>Home visits are not offered routinely, excepting in the case of illnesses or disabilities that make travel impossible for the client. Unfortunately concession prices are not available for home visits</li>
+      </ul>
     </div>
   </div>
-  <div class="row" id="tenthrow">
+  <div class="row" id="contact">
     <h3>Contact</h3>
   </div>
-  <div class="row" id="eleventhrow">
-    <div class="col-md-4">
-      <img id="contactpic" src=""/>
-    </div>
-    <div class="col-md-4">
+  <div class="row" id="contacttwo">
+    <div class="col-md-6">
       <p><b>Email:</b> integrationcounselling@outlook.com</p>
       <p><b>Tel:</b> 073</p>
-      <h6><b>Further Info</b></h6>
       <p>For further information, please contact me via email or telephone using the details above</p>
+    </div>
+    <div class="col-md-6">
+      <h6>Professional Profiles</h6>
+      <a href="https://www.bacp.co.uk/search/Register"><img id="profprof" src="bacp.jpg"/></a>
+      <a href="https://www.counselling-directory.org.uk/counsellors/"><img id="profprof" src="cd.png"/></a>
+      <a href="https://www.psychologytoday.com/gb/counselling/england"><img id="profprof" src="psychology.jpg"/></a>
+      <a href="https://www.linkedin.com/"><img id="profprof" src="li.jpg"/></a>
     </div>
   </div>
   <div class="row">
     <footer>
       <div class="col-md-7">
-        <a href="https://www.bacp.co.uk/search/Register"><img class="footlogo" src="bacp.jpg"></a>
-        <a href="https://www.bacp.co.uk/about-us/protecting-the-public/bacp-register/"><img class="footlogo" src="accredited.png"></a>
-        <a href="https://www.psychologytoday.com/gb/counselling/england"><img class="footlogo" src="psychologytoday.jpg"></a>
-        <a href="https://www.counselling-directory.org.uk/counsellors/gillian-egeli"><img class="footlogo" src="cd.png"></a>
-      </div>
+        <hr>
+        <p class="foottext">2018 Integration Counselling</p>
       <div class="col-md-5">
         <p class= "foottext">https://integrationcounselling.com</br><b>e:</b> integrationcounselling@outlook.com<br /><b>t:</b> 07</p>
       </div>
