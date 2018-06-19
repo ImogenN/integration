@@ -17,8 +17,8 @@ html,body
   background: white;
 }
 #impairmentinfo {
-  font-size: 12px;
-  color: #454545;
+  font-size: 20px;
+  color: #858585;
   text-align: right;
   margin: 10px;
   padding:0;
@@ -102,7 +102,7 @@ h3 {
   margin: 40px;
   height: 200px;
 }
-#therapists, #therapiststwo, #therapiststhree, #therapistsfour, #group, #grouptwo, #locations, #locationstwo {
+#therapists, #therapiststwo, #therapiststhree, #therapistsfour, #group, #grouptwo, #groupthree, #locations, #locationstwo {
   background-color: #ebebe0;
 }
 
@@ -110,6 +110,7 @@ h3 {
   padding: 10px 60px 20px 60px;
   height: 400px;
   align-content: center;
+  position: float;
 }
 #headshot {
   height: 300px;
@@ -118,17 +119,17 @@ h3 {
 }
 .qualtext {
   font-size: 16px;
-  margin: 20px 20px 0px 20px;
+  padding: 20px 20px 50px 20px;
   font-family: 'Montserrat';
 }
 .edlogo {
   width: 150px;
   margin: 5px;
-  align-items: center;
+  align: right;
 }
 #edlogos {
-  margin: 100px 50px 50px 50px;
-  align-items: center;
+  padding: 50px 20px 50px 100px;
+  align: right;
 }
 table {
   width: 90%;
@@ -153,16 +154,9 @@ table tr td {
   margin: 0px;
   padding: 0px 20px 20px 20px;
 }
-#quote {
-  font-size: 18px;
-  font-family: 'Arapey';
-  font-style: italic;
-  color:#528aa8;
-  margin-top: -15px;
-}
 #groupimg {
-  width: 400px;
-  margin: 20px 20px 50px 20px;
+  width: 450px;
+  padding: 20px 20px 50px 50px;
 }
 #fees {
   width: 400px;
@@ -174,6 +168,11 @@ table tr td {
 }
 .address {
   padding: 80px 20px 50px 50px;
+  font-size: 18px;
+}
+#locinfo {
+  padding: 50px 20px 20px 0px;
+  font-size: 18px;
 }
 .container {
   width: 100%;
@@ -189,15 +188,11 @@ table tr td {
   margin: 0;
   padding: 10px 20px 10px 50px;
 }
-footer {
-  background-color: #1a1c1e
-}
 .foottext {
-
   color: #848f9b;
   font-size: 12px;
   text-align: right;
-  margin: 15px 25px 15px 50px;
+  margin: 5px;
   font-family: 'Montserrat';
 }
 @media (max-width: 500px) {
@@ -209,9 +204,6 @@ footer {
   h2 {
    font-size: 20px;
    margin: 20px 0 30px 0;
-  }
-  footer {
-    font-family: 'Montserrat';
   }
 }
 </style>
@@ -256,20 +248,26 @@ footer {
   <div class="row" id="therapiststwo">
     <div class="col-md-8">
       <p>Integration counselling was set up by Imogen Nevard. She is an integratively trained therapist and member
-        of the British Association of Counselling and Psychotherapy, with experience counselling in both NHS and charity settings</p>
+        of the British Association of Counselling and Psychotherapy, with experience counselling in both NHS and
+        charity settings  <br /><br /><i> I am aware that the decision to enter therapy can be an emotional one,
+        and offer an initial assessment consultation session for you to begin to explore your issues with me and
+        see if you would like to work with me. I facilitate a safe, confidential, non-judgemental and thoughtful space
+         where you can explore a range of problematic issues, sense of self, values, relationships, and patterns
+         of behaviour at your own pace.</i></p>
     </div>
     <div class="col-md-4">
       <img id="headshot" src="headshot1.jpg"/>
     </div>
   </div>
   <div class="row" id="therapiststhree">
-    <div class="col-md-5" id="edlogos">
+    <div class="col-md-4" id="edlogos">
       <img class="edlogo" src="bacpcourse.jpg"><br /><br />
       <img class="edlogo" src="uom.jpg">
     </div>
-    <div class="col-md-7">
-      <p class="qualtext"><b>Qualifications:</b></p>
+    <div class="col-md-8">
+      <h4>Qualifications:</h4>
       <ul class="qualtext">
+        <title>Qualifications:</title>
         <li><i>MA (hons) Counselling</i> from the University of Manchester</li><br />
         <li>Level 4 Qualification in <i>Community Mental Health Practice</i></li><br />
         <li>Currently completing a PhD in <i>mental health research</i> at the University of Manchester </li><br />
@@ -286,15 +284,14 @@ footer {
     <div class="col-md-8">
       <p> Integrative therapy, or integrative counselling is a combined approach to psychotherapy that brings
         together different elements of specific therapies. Integrative therapists take the view that there is
-        no single approach that can treat each client in all situations. Each person needs to be considered as
+        no single approach that can treat each client in all situations.<br /><br />  Each person needs to be considered as
         a whole and counselling techniques must be tailored to their individual needs and personal circumstances.
         Integrative counselling maintains the idea that there are many ways in which human psychology can be
-        explored and understood - no one theory holds the answer. All theories are considered to have value,
+        explored and understood - no one theory holds the answer. <br /><br />  All theories are considered to have value,
         even if their foundational principles contradict each other - hence the need to integrate them.The
         integrative approach also refers to the infusion of a person's personality and needs - integrating the
         affective, behavioural, cognitive, and physiological systems within one person, as well as addressing
-        social and spiritual aspects. Essentially, integrative counsellors are not only concerned with what works,
-        but why it works - tailoring therapy to their clients and not the client to the therapy.</p>
+        social and spiritual aspects.</p>
     </div>
   </div>
   <div class="row" id="whatisthree">
@@ -332,16 +329,29 @@ footer {
       <img id="groupimg" src="group.jpg">
     </div>
     <div class="col-md-8">
-      <p>Group facilitation involves...</p>
-      <p>Types of group facilitation:
-        <ul>
-          <li>Workplace</li>
-          <li>Group Therapy</li>
-          <li>Personal Development</li>
-        </ul>
-      </p>
+      <p>The primary role of a facilitator is to assist parties to have a constructive dialogue. Facilitators usually
+        help groups set an agenda and manage the process of discussion. ... For example, facilitators help the parties
+        to recognize how their own styles of interacting or the institutional prejudices that they embody may interfere
+        with constructive problem solving.    <br /><br />Here the objective is to promote understanding among the parties.  Additionally,
+        facilitators may propose a series of process steps to keep the discussion on target. Facilitators may also explicitly
+        help parties find a mutually agreeable solution to a dispute.</p>
     </div>
   </div>
+      <div class="row" id="groupthree">
+        <div class="col-md-12">
+          <table id="topics">
+            <tr>
+              <th><u>Group Facilitation Offered</u></th>
+            </tr>
+            <tr>
+              <td>Workplace/Organisational</td>
+              <td>Group Therapy</td>
+              <td>Personal Development</td>
+              <td>Mindfulness</td>
+            </tr>
+          </table>
+        </div>
+    </div>
   <div class="row" id="fees">
     <h3>Fees</h3>
   </div>
@@ -380,14 +390,14 @@ footer {
       <iframe class="map" style="height: 300px; width: 300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1128.0966938531012!2d-2.3239490932053153!3d53.4255534299957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bac4f1ae71ec5%3A0x87934246d9620c1d!2sCurzon+Rd%2C+Sale+M33+7DR!5e0!3m2!1sen!2suk!4v1524518713390" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="col-md-3">
-      <p class="address">Health & Wellbeing Centre<br />2A Curzon Road<br />Sale<br />Manchester<br />M33 7DR<br /><small>*next to Re:Love & Care Charity Shop</small></p>
+      <p class="address">Health & Wellbeing Centre<br />2A Curzon Road<br />Sale<br />Manchester<br />M33 7DR<br /><small>*next to Re:Love & Care Shop</small></p>
     </div>
-    <div class="col-md-6">
+    <div id="locinfo" class="col-md-6">
       <ul>
-        <li>Evening and weekend sessions available</li>
-        <li>Workplace counselling can be provided onsite for employers based in the Greater Manchester region</li>
-        <li>Group facilitation can be done at your organisation. If a venue is also required, this will incur an additional charge</li>
-        <li>Home visits are not offered routinely, excepting in the case of illnesses or disabilities that make travel impossible for the client. Unfortunately concession prices are not available for home visits</li>
+        <li>Evening and weekend sessions available</li><br />
+        <li>Workplace counselling can be provided onsite for employers based in the Greater Manchester region</li><br />
+        <li>Group facilitation can be done at your organisation. If a venue is also required, this will incur an additional charge</li><br />
+        <li>Home visits are not offered routinely, excepting in the case of illnesses or disabilities that make travel impossible for the client. Unfortunately concession prices are not available for home visits</li><br />
       </ul>
     </div>
   </div>
@@ -398,27 +408,24 @@ footer {
     <div class="col-md-6">
       <p class="contact"><b>Email:</b> integrationcounselling@outlook.com</p>
       <p class="contact"><b>Tel:</b> 073</p>
-      <p class="contact">Please email or leave a voicemail containing<br />- Full Name<br />- Preferred contact details<br />- Details of service interested in<br />I will be in contact shortly to arrange an initial telephone assessment or consultation</p>
+      <p class="contact">Please email or leave a voicemail containing<br />- Full Name<br />- Preferred contact details<br />
+        - Details of service interested in<br /><br />I will be in contact shortly after your message to arrange an initial
+        telephone assessment or consultation. If you have any questions, queries or concerns, please do not hestitate to get
+        in touch and I will answer as best I can. I look forward to your call.</p>
     </div>
     <div class="col-md-6">
-      <h6>Professional Profiles</h6>
       <a href="https://www.bacp.co.uk/search/Register"><img class="profprof" src="bacp.jpg"/></a>
       <a href="https://www.counselling-directory.org.uk/counsellors/"><img class="profprof" src="cd.png"/></a><br />
       <a href="https://www.psychologytoday.com/gb/counselling/england"><img class="profprof" src="psychologytoday.jpg"/></a>
       <a href="https://www.linkedin.com/"><img class="profprof" src="li.png"/></a>
     </div>
   </div>
-  <div class="row">
-    <footer>
-      <div class="col-md-7">
-        <hr>
-        <p class="foottext">2018 Integration Counselling</p>
-      <div class="col-md-5">
-        <p class= "foottext">https://integrationcounselling.com</br><b>e:</b> integrationcounselling@outlook.com<br /><b>t:</b> 07</p>
-      </div>
-    </footer>
+  <div id="footer" class="row">
+    <hr>
+    <div class="col-md-12">
+      <p class= "foottext">https://integrationcounselling.com</br><b>e:</b> integrationcounselling@outlook.com<br /><b>t:</b> 07</p>
+    </div>
   </div>
-</div>
   <script>
   $(document).ready(function(){
   $('body').css('display', 'none');
@@ -455,7 +462,7 @@ function myFunction() {
     $('h1, h2').css("color", "#aaaaaa")
   })
   $('li a').mouseover('hover', function() {
-    $(this).css("color", "#232323")
+    $(this).css("color", "#333333")
   })
   $('a').mouseout('hover', function() {
     $(this).css("color", "#aaaaaa")
@@ -483,6 +490,14 @@ function myFunction() {
       });
     } // End if
   });
+});
+$('.profprof').mouseenter(function() {
+    $(this).css("cursor","pointer");
+    $(this).animate({width: "50%", height: "50%"}, 'slow');
+});
+
+$('.profprof').mouseleave(function() {
+    $(this).animate({width: "28%"}, 'slow');
 });
   </script>
 
