@@ -39,6 +39,69 @@ html,body
   -webkit-transition: color .5s;
   -moz-transition: color .5s;
 }
+  #mobilenav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background: #454545;
+      height: 40px;
+      display: flex;
+      justify-content: space-around;
+  }
+  #mobilenav li {
+    color: #aaaaaa;
+    font-family: 'Lato';
+    font-size: 20px;
+    padding-top: 5px;
+  }
+  #mobilenav li a {
+    color: #aaaaaa;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: inherit;
+  color: #aaaaaa;
+  padding: inherit;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 a:hover {
   text-decoration: none;
 }
@@ -219,6 +282,17 @@ table tr td {
     height: 60px;
   }
 }
+@media (max-width: 700px) {
+  #nav{
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+    #mobilenav {
+      display: none;
+    }
+  }
+}
 </style>
 </head>
 <body>
@@ -239,6 +313,17 @@ table tr td {
       </ul>
     </nav>
   </div>
+  <div class="dropdown" id="mobilenav">
+    <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="#therapists">Therapists</a>
+    <a href="#whatis">What is Integrative Counselling?</a>
+    <a href="#group">Group Facilitation</a>
+    <a href="#fees">Fees</a>
+    <a href="#locations">Locations</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
   <div class="container" id="content">
   <div class="row" id="intro">
     <div class="col-xs-12 col-md-7">
@@ -408,13 +493,6 @@ table tr td {
     <div class="col-xs-12 col-sm-6 col-lg-3">
       <p class="address">Health & Wellbeing Centre<br />2A Curzon Road<br />Sale<br />Manchester<br />M33 7DR<br /><small>*next to Re:Love & Care Shop</small></p>
     </div>
-    <div class="row" id="locationstwo">
-      <div class="col-xs-12 col-sm-6 col-lg-3">
-        <iframe class="map" style="height: 300px; width: 300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1128.0966938531012!2d-2.3239490932053153!3d53.4255534299957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bac4f1ae71ec5%3A0x87934246d9620c1d!2sCurzon+Rd%2C+Sale+M33+7DR!5e0!3m2!1sen!2suk!4v1524518713390" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-lg-3">
-        <p class="address">Building<br />Road<br />Picadilly Gardens<br />Manchester<br />M1<br /><small>*distance from station</small></p>
-      </div>
     <div id="locinfo" class="col-xs-12">
       <ul>
         <li>Evening and weekend sessions available</li><br />
